@@ -50,11 +50,11 @@
 ```json
 {
   "userId": "OUIEBZId",
-  "deadline": "September 7, 2025 at 10:00:00 AM UTC+9", // Firestore Timestamp型
-  "status": "pending",                                // "pending", "processed", "error"など
-  "mqttTopic": "calendar/reminders/OUIEBZId",         // 送信先のMQTTトピック
+  "deadline": "September 7, 2025 at 10:00:00 AM UTC+9",        // Firestore Timestamp型
+  "status": "pending",                                         // "pending", "processed", "error"など
+  "mqttTopic": "calendar/reminders/OUIEBZId",                  // 送信先のMQTTトピック
   "mqttMessage": "{\"title\":\"定例会議\",\"time\":\"10:00\"}", // 送信するメッセージ(JSON文字列)
-  "createdAt": "September 6, 2025 at 11:17:12 AM UTC+9" // Firestore Timestamp型
+  "createdAt": "September 6, 2025 at 11:17:12 AM UTC+9"        // Firestore Timestamp型
 }
 ```
 
