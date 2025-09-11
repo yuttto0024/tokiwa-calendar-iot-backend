@@ -49,7 +49,7 @@ func CheckTasksAndPublish(w http.ResponseWriter, r *http.Request) {
 	defer client.Close()
 
 	now := time.Now()
-	tasksRef := client.Collection("scheduled_tasks")
+	tasksRef := client.Collection("search_deadline")
 	// "status"が"pending"で、"deadline"が現在時刻以前のタスクを検索
 	query := tasksRef.Where("status", "==", "pending").Where("deadline", "<=", now)
 	iter := query.Documents(ctx)
